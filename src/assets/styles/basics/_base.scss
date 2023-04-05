@@ -93,3 +93,21 @@ i {
         }
     }
 }
+
+[data-title] {
+      position: relative;
+    }
+
+    [data-title]:hover::after {
+      content: attr(data-title);
+      position: absolute;
+      font-size: 12px;
+      background: #F10D0D;
+      color: #fff;
+      padding: 0.2em 0.3em;
+      border-radius: 0.2em;
+      text-transform: capitalize;
+      bottom: -25px;
+      width: max-content;
+      left: 12px;
+    }
