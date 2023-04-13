@@ -3,6 +3,7 @@ import { Outlet, createBrowserRouter } from 'react-router-dom';
 import AppIndex from './views/AppIndex';
 import AppSearch from './views/AppSearch';
 import StationLibrary from './views/StationLibrary.jsx';
+import StatsView from './views/StatsView.jsx';
 
 const routes = [
  {
@@ -18,6 +19,10 @@ const routes = [
  {
   path: '/contact',
   element: <StationLibrary />,
+ },
+ {
+  path: '/stats',
+  element: <StatsView />,
  },
  {
   path: '*',
